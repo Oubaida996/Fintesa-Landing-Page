@@ -1,0 +1,80 @@
+.header {
+    z-index: 1;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+    background-color: var(--Primary-Main);
+    color: #f1edff;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a:link {
+    margin-right: 1.6rem;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: var(--Secondary-Main);
+}
+
+.menu {
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav a:link {
+        margin-bottom: 1.6rem;
+    }
+}
+
+@media (max-width: 858px) {
+    .menu {
+        display: block;
+    }
+    nav a:link {
+        margin-right: 0;
+    }
+    nav {
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        width: auto;
+        position: fixed;
+        height: 30vh;
+        background-color: var(--Primary-Light);
+        top: 43px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+    #check:checked~nav {
+        right: 0;
+        margin-right: 2.5%;
+    }
+}
