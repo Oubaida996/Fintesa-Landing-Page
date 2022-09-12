@@ -15,7 +15,7 @@
     --Secondary-Light: #f1edff;
     --Accent-Main: #e6123c;
     --Accent-Light: #ff606c;
-    --Text-Primary: rgba(0, 0, 0, 0.87);
+    --Text-Primary: rgb(64 61 61 / 87%);
     --Text-Secondary: rgba(0, 0, 0, 0.54);
     --Text-Secondary-Dark: rgba(255, 255, 255, 0.7);
     --Text-Disabled: rgba(0, 0, 0, 0.38);
@@ -23,6 +23,7 @@
 }
 
 body {
+    background-color: var(--Secondary-Light);
     width: 100vw;
     height: 100vh;
     font-family: "Poppins", sans-serif;

@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
-    background-color: red;
+    gap: 2rem;
 }
 
 a:visited {
