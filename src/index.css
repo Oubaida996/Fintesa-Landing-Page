@@ -1,18 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root {
+    --Primary-Main: #4d66f3;
+    --Primary-Light: #a7a3d9;
+    --Secondary-Main: #6cbaa1;
+    --Secondary-Light: #f1edff;
+    --Accent-Main: #e6123c;
+    --Accent-Light: #ff606c;
+    --Text-Primary: rgba(0, 0, 0, 0.87);
+    --Text-Secondary: rgba(0, 0, 0, 0.54);
+    --Text-Secondary-Dark: rgba(255, 255, 255, 0.7);
+    --Text-Disabled: rgba(0, 0, 0, 0.38);
+    --Textfield: rgba(0, 0, 0, 0.42);
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
 }
