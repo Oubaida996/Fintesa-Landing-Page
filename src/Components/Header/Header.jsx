@@ -9,7 +9,7 @@ export default function Header() {
             <label htmlFor="check" className='menu'><i className='fas fa-bars'></i></label>
             <nav>
                 <a href='#DataAnalysis' >Data Analysis</a>
-                <a htmlFor="check" href='#MenaCart' >Mena Cart</a>
+                <a htmlFor="check" href='#MenaChart' >Mena Cart</a>
                 <a htmlFor="check" href='#Partner' >Partner</a>
             </nav>
         </header>
