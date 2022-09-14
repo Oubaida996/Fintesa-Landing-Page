@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import DataAnalysis from './Components/Data-Analysis/DataAnalysis';
 import Footer from './Components/Footer/Footer';

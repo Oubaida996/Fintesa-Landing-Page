@@ -4,7 +4,7 @@ import DurationPayments from './Duration-Payments/DurationPayments';
 import Overview from './Overview/Overview';
 export default function DataAnalysis() {
     return (
-        <section className='DataAnalysis'>
+        <section className='DataAnalysis' id='DataAnalysis'>
             <DurationPayments />
             <Overview />
         </section>

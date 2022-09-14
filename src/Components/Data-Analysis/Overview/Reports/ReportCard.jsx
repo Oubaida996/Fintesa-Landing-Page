@@ -1,6 +1,6 @@
 import React from 'react';
 import './ReportCard.css';
-
+import 'aos/dist/aos.css';
 export default function ReportCard({ label, number, coin = null, percentageOfDecreasingOrIncreasing, DecORInc = 'inc' }) {
     return (
         <div className={`ReportCard ${DecORInc}`}>
