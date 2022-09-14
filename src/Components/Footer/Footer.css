@@ -1,0 +1,70 @@
+.Footer {
+    display: flex;
+    justify-content: end;
+    padding: 3% 5%;
+    background-color: var(--Primary-Main);
+    color: var(--Secondary-Light);
+    height: 6rem;
+}
+
+.Footer h5:hover {
+    cursor: default;
+    font-size: 0.8em;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    aspect-ratio: 1.7;
+    width: 60%;
+    left: 20%;
+    top: 5vh;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.Form input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.Form input:focus-visible {
+    outline: none !important;
+    border: 2px solid var(--Primary-Light);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div:last-child {
+    display: flex;
+    justify-content: end;
+}
+
+input[type="submit"] {
+    background-color: var(--Primary-Main);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--Primary-Light) !important;
+}
+
+input[type="submit"]:focus {
+    background-color: var(--Primary-Main) !important;
+}

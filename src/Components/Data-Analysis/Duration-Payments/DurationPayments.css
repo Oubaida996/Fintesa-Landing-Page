@@ -1,0 +1,34 @@
+.DurationPayments {
+    flex-grow: 2;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+#tab {
+    width: 570px;
+}
+
+.MuiTab-root {
+    font-size: 0.7em !important;
+}
+
+@media (max-width: 952px) {
+    #tab {
+        width: 400px;
+        aspect-ratio: 2;
+    }
+}
+
+@media (max-width: 858px) {
+    .DurationPayments {
+        align-items: center;
+    }
+    #tab {
+        width: 300px;
+        aspect-ratio: 2;
+    }
+}

@@ -1,0 +1,78 @@
+.ReportCard {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ReportCard h5 {
+    color: var(--Text-Secondary);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+}
+
+.ReportCard:first-child {
+    background-color: var(--Secondary-Main);
+}
+
+.ReportCard:first-child h3,
+.ReportCard:first-child h5,
+.ReportCard:first-child h6 {
+    color: #fff;
+}
+
+.ReportCard h3 {
+    color: var(--Text-Primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.ReportCard h6 {
+    color: rgb(200, 193, 193);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.ReportCard h6 span {
+    color: var(--Text-Secondary);
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.inc h6::after {
+    content: "↑";
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.dec h6::after {
+    color: var(--Text-Primary);
+    content: "↓";
+    font-size: 1em;
+    margin-left: 5px;
+    font-weight: 900;
+    color: var(--Text-Primary);
+}
+
+@media (max-width: 952px) {
+    .ReportCard {
+        aspect-ratio: 3;
+    }
+}
+
+@media (max-width: 858px) {
+    .ReportCard {
+        padding: 10px;
+        align-items: center;
+    }
+    .Reports .content:last-child h5 {
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+}

@@ -1,4 +1,11 @@
 .App {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
     margin: 0 auto;
+    gap: 5rem;
+}
+
+a:visited {
+    color: #f1edff;
 }

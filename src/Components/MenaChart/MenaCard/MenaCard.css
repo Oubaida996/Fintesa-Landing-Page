@@ -1,0 +1,98 @@
+.btn {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 2px;
+    box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn span {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.btn .expand-more {
+    font-size: 2em;
+    color: #666;
+}
+
+.hide {
+    transform: rotate(0deg);
+}
+
+.show {
+    transform: rotate(-90deg);
+}
+
+.Description {
+    display: flex;
+    padding: 15px;
+    box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.MenaCard:last-child .false {
+    margin-bottom: 0;
+}
+
+.true {
+    transition: all 1s ease-out;
+}
+
+.false {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.Description img {
+    flex-grow: 2;
+    width: 50%;
+    aspect-ratio: 2;
+    object-fit: cover;
+}
+
+.Description p {
+    flex-grow: 3;
+    align-self: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+@media (max-width: 952px) {
+    .btn span {
+        font-size: 1.1em;
+    }
+    .Description p {
+        flex-grow: 3;
+        align-self: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 858px) {
+    .btn span {
+        font-size: 0.8em;
+    }
+    .btn .expand-more {
+        font-size: 1.2em;
+    }
+    .Description p {
+        flex-grow: 3;
+        align-self: center;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.85);
+        letter-spacing: 1px;
+        line-height: 1em;
+    }
+}
