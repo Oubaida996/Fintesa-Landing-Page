@@ -1,0 +1,86 @@
+.Partners {
+    padding: 0 5%;
+}
+
+.PartnerCard {
+    width: 100%;
+    height: 8rem;
+    margin: 0 0.6rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.PartnerCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* square buttons */
+
+.rec.rec-arrow {
+    font-size: 1rem;
+    border-radius: 0;
+    background-color: var(--Secondary-Light);
+    box-shadow: none !important;
+    color: #666;
+}
+
+.rec.rec-arrow:hover,
+:focus {
+    border-radius: 50px;
+    background-color: #a6b3f9 !important;
+    box-shadow: none;
+    color: #666;
+}
+
+.rec.rec-item-wrapper,
+:focus {
+    background-color: white !important;
+    border-radius: 5px;
+    margin-inline: 5px 0;
+}
+
+.rec.rec-arrow:focus {
+    background-color: #a6b3f9 !important;
+    border-radius: 50px;
+}
+
+.rec.rec-arrow-left {
+    background-color: var(--Secondary-Light);
+}
+
+.rec.rec-dot {
+    background-color: #a6b3f9 !important;
+    box-shadow: 0 0 1px 1px #6cbaa1 !important;
+}
+
+.rec.rec-dot_active {
+    box-shadow: 0 0 1px 3px #6cbaa1 !important;
+    transition: all 250ms ease;
+}
+
+
+/* disable default outline on focused items */
+
+
+/* add custom outline on focused items */
+
+.rec-carousel-item:focus {
+    outline: none;
+}
+
+@media (max-width: 952px) {
+    .PartnerCard {
+        width: 100%;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 858px) {
+    .PartnerCard {
+        width: 100%;
+        height: 5rem;
+    }
+}
