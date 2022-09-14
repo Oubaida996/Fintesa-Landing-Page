@@ -6,7 +6,9 @@ export default function Header() {
         <header className='header'>
             <label className="logo" href="#">Fintesa</label>
             <input type="checkbox" id='check' />
-            <label htmlFor="check" className='menu'><i className='fas fa-bars'></i></label>
+            <label htmlFor="check" className='menu'><span class="material-symbols-outlined">
+                menu
+            </span></label>
             <nav>
                 <a href='#DataAnalysis' >Data Analysis</a>
                 <a htmlFor="check" href='#MenaChart' >Mena Cart</a>
