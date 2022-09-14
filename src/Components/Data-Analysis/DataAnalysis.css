@@ -1,0 +1,23 @@
+.DataAnalysis {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5%;
+}
+
+@media (max-width: 952px) {
+    .DataAnalysis {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 858px) {
+    .DataAnalysis {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
