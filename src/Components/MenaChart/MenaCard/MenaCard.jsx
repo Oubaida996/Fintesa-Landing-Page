@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './MenaCard.css';
+import 'aos/dist/aos.css';
 
-
-export default function MenaCard({ label, description, index, image }) {
+export default function MenaCard({ label, description, index, image_url }) {
+    const animation = index === 2 ? "fade-left" : "fade-right";
     const [display, setDisplay] = useState(false);
     const [rotate, setRotate] = useState('show');
 
@@ -45,7 +46,7 @@ export default function MenaCard({ label, description, index, image }) {
     }
 
     return (
-        <div className='MenaCard'>
+        <div data-aos={animation} className='MenaCard'>
             <div className='btn' onClick={(e) => showHandel(e, index)} >
                 <span>{label}</span>
                 <span className={`material-symbols-outlined expand-more ${rotate}`}>expand_more
@@ -53,7 +54,7 @@ export default function MenaCard({ label, description, index, image }) {
             </div>
             <div className={`Description ${display}`}>
                 <p>{description}</p>
-                <img src={image} alt="not found image" />
+                <img src={image_url} alt="not found" />
             </div>
         </div>
     )

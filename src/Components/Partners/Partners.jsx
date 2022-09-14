@@ -34,7 +34,7 @@ export default function Partners() {
     ];
 
     return (
-        <div className="Partners">
+        <div className="Partners" id='Partners'>
             <Carousel breakPoints={breakPionts}>
                 {items.map(item => <div className='PartnerCard' key={item.id}><img src={item.image} alt={item.id} /></div>)}
             </Carousel>

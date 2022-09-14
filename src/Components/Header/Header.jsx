@@ -10,7 +10,7 @@ export default function Header() {
             <nav>
                 <a href='#DataAnalysis' >Data Analysis</a>
                 <a htmlFor="check" href='#MenaChart' >Mena Cart</a>
-                <a htmlFor="check" href='#Partner' >Partner</a>
+                <a htmlFor="check" href='#Partners' >Partner</a>
             </nav>
         </header>
     )

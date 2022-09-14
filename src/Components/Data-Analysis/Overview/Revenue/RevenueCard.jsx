@@ -1,24 +1,9 @@
 import React from 'react';
 import './RevenueCard.css';
 import BarChart from '../../../BarChart/BarChart';
+import 'aos/dist/aos.css';
 
 
-const data = {
-    labels: Array.from(Array(12).keys()),
-    datasets: [{
-        label: 'data',
-        data: Array.from({ length: 12 }, () => Math.floor(Math.random() * 12)),
-        backgroundColor: ' #4d66f3',//--Primary-Main: #4d66f3;
-        //#A6B3F9
-        base: 0,
-        borderSkipped: false,
-        borderRadius: 10,
-        barThickness: 12,
-        maxBarThickness: 12,
-
-    }],
-
-}
 
 const options = {
     plugins: {
@@ -39,14 +24,14 @@ const options = {
     }
 }
 
-export default function RevenueCard({ label, totalSummation, chartData = null }) {
+export default function RevenueCard({ label, totalSummation, chartData }) {
 
     return (
         <div className='RevenueCard'>
             <h3>{label}</h3>
-            <div className='RevenueContent'>
+            <div data-aos-duration="2000" data-aos="fade-left" className='RevenueContent'>
                 <h3>{totalSummation}<span>JOD</span></h3>
-                <BarChart options={options} data={data} />
+                <BarChart options={options} data={chartData} />
             </div>
         </div>
     )

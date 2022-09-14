@@ -13,11 +13,17 @@
     color: var(--Text-Secondary);
     font-weight: 500;
     letter-spacing: 0.5px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
-.Reports .content:last-child h5 {
-    font-size: 0.9em;
+.ReportCard:first-child {
+    background-color: var(--Secondary-Main);
+}
+
+.ReportCard:first-child h3,
+.ReportCard:first-child h5,
+.ReportCard:first-child h6 {
+    color: #fff;
 }
 
 .ReportCard h3 {
