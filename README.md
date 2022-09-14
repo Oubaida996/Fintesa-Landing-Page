@@ -1,3 +1,3 @@
 # Fintesa Landing Page
 
-![image](./assets/FrontEndTest.png)
+![image](./src/assets/FrontEndTest.png)
